@@ -6,8 +6,8 @@ use App\Http\Requests;
 use Illuminate\Http\Request;
 use Illuminate\Database\Eloquent\ModelNotFoundException;
 
-use App\Point;
 use App\User;
+use App\Point;
 
 class HomeController extends Controller
 {
@@ -43,9 +43,12 @@ class HomeController extends Controller
 
     public function index()
     {
-        return view('home');
+        $users = User::all();
+
+        return view('home' , compact('users'));
     }
 
+    
     public function updatePoints(Request $request)
     {
         if( $request->user() ) 
