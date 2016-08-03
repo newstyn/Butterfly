@@ -10,13 +10,7 @@
 
                 <div class="panel-body">
                     <ul>
-                        
-                        @foreach($users as $user)
-                                <li>
-                                    Name: {{$user->name}}
-                                    {{ App\User::find($user->id)->pointscount}
-                                </li>
-                        @endforeach
+                        you are logged in
                     </ul>
                 </div>
             </div>

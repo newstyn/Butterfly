@@ -40,6 +40,11 @@ class User extends Authenticatable
     //     return $this->belongsToMany('App\Role')->withPivot('created_at');
     // }
 
+    public function role()
+    {
+        return $this->belongsTo('App\Role');
+    }
+
     public function pointscount()
     {
         return $this->hasOne('App\Point');
