@@ -45,8 +45,8 @@ class User extends Authenticatable
         return $this->belongsTo('App\Role');
     }
 
-    public function pointscount()
+    public function point()
     {
-        return $this->hasOne('App\Point');
+        return $this->belongsTo('App\Point');
     }
 }

@@ -49,7 +49,7 @@
 
                 <!-- Branding Image -->
                 <a class="navbar-brand" href="{{ url('/') }}">
-                    Laravel
+                    Butterfly
                 </a>
             </div>
 

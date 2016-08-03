@@ -6,41 +6,48 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use App\User;
+use App\Point;
 
-class AdminUsersController extends Controller
+class UsersScoresController extends Controller
 {
+    
     public function index()
     {
         $users = User::all();
-        return view('admin.users.index' , compact('users'));
+        return view('scores.index' , compact('users'));
     }
 
-
+    
     public function create()
     {
-        return view('admin.users.create');
+        
     }
 
+    
     public function store(Request $request)
     {
         
     }
 
+    
     public function show($id)
     {
         
     }
 
+    
     public function edit($id)
     {
-        return view('admin.users.edit');
+       
     }
 
+    
     public function update(Request $request, $id)
     {
         
     }
 
+   
     public function destroy($id)
     {
         
